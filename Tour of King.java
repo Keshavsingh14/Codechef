@@ -9,15 +9,12 @@ class Codechef
 	{
 		try (// your code goes here
         Scanner sc = new Scanner(System.in)) {
-            int X = sc.nextInt();
-            for(int i=1; i<=X; i++){
-            int n = sc.nextInt();
-            if(n >=2000){
-                System.out.println("YES");
-            }
-            else{
-                System.out.println("NO");
-            }
+            int test = sc.nextInt();
+            while(test-->0){
+                int N = sc.nextInt();
+                int M = sc.nextInt();
+                int Sum = (N*5) + (M*7);
+                System.out.println(Sum);
             }
         }
 	}
